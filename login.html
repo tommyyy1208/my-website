@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng nhập tài khoản</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Dancing+Script:wght@400..700&family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mystery+Quest&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <a href="home.html" class="logo">
+        <img class="icon-img" src="img/icon.png" alt="icon" />
+        <p>Tra cứu tình yêu cung hoàng đạo</p>
+      </a>
+      <div>
+        <h1 class="heading-primary">Đăng nhập</h1>
+      </div>
+
+      <form class="form-login">
+        <input
+          type="text"
+          placeholder="Số điện thoại đăng nhập"
+          required
+          class="input-phone"
+        />
+        <input
+          type="password"
+          placeholder="Mật khẩu"
+          required
+          class="input-password"
+        />
+
+        <div class="form-options">
+          <label class="checkbox">
+            <input type="checkbox" />
+            Ghi nhớ đăng nhập
+          </label>
+          <a href="#" class="forgot-link">Quên mật khẩu?</a>
+        </div>
+
+        <button type="submit" class="btn-login">Đăng nhập</button>
+        <p class="register-link">
+          <span>Bạn chưa có tài khoản?</span>
+          <a href="register.html">Đăng ký ngay</a>
+        </p>
+      </form>
+    </div>
+  </body>
+</html>

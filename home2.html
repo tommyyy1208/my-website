@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Zodiac Sign Lookup</title>
+    <link rel="stylesheet" href="home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Dancing+Script:wght@400..700&family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mystery+Quest&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Phần điều hướng (navbar) -->
+    <section id="section-nav">
+      <nav class="navbar">
+        <div class="navbar-left">
+          <a href="#" class="logo">
+            <img class="icon-img" src="img/icon.png" alt="icon" />
+            <span class="logo-text">Zodiac Sign Lookup</span>
+          </a>
+        </div>
+        <div class="navbar-right">
+          <ul>
+            <li>
+              <a href="#"><i class="fas fa-search"></i> Lookup</a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle"
+                ><i class="fas fa-shopping-cart"></i> Buy VIP
+                <i class="fas fa-caret-down"></i
+              ></a>
+              <div class="dropdown-content">
+                <a href="#">Package 1</a>
+                <a href="#">Package 2</a>
+              </div>
+            </li>
+            <li>
+              <a href="login.html"
+                ><i class="fas fa-user-plus"></i> Sign Up / Log In</a
+              >
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle"
+                ><i class="fas fa-globe"></i> Language
+                <i class="fas fa-caret-down"></i
+              ></a>
+              <div class="dropdown-content">
+                <a href="home.html">Vietnamese</a>
+                <a href="home2.html">English</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+
+    <!-- Phần nhập liệu và nội dung chính -->
+    <div class="background-zodiac">
+      <span class="zodiac n1">
+        <img src="img/zodiac/aries.png" alt="aries" />
+      </span>
+      <span class="zodiac n2">
+        <img src="img/zodiac/taurus.png" alt="taurus" />
+      </span>
+      <span class="zodiac n3">
+        <img src="img/zodiac/gemini.png" alt="gemini" />
+      </span>
+      <span class="zodiac n4">
+        <img src="img/zodiac/cancer.png" alt="cancer" />
+      </span>
+      <span class="zodiac n5">
+        <img src="img/zodiac/leo.png" alt="leo" />
+      </span>
+      <span class="zodiac n6">
+        <img src="img/zodiac/virgo.png" alt="virgo" />
+      </span>
+      <span class="zodiac n7">
+        <img src="img/zodiac/libra.png" alt="libra" />
+      </span>
+      <span class="zodiac n8">
+        <img src="img/zodiac/scorpio.png" alt="scorpio" />
+      </span>
+      <span class="zodiac n9">
+        <img src="img/zodiac/sagittarius.png" alt="sagittarius" />
+      </span>
+      <span class="zodiac n10">
+        <img src="img/zodiac/capricorn.png" alt="capricorn" />
+      </span>
+      <span class="zodiac n11">
+        <img src="img/zodiac/aquarius.png" alt="aquarius" />
+      </span>
+      <span class="zodiac n12">
+        <img src="img/zodiac/pisces.png" alt="pisces" />
+      </span>
+    </div>
+    <section id="section-input">
+      <main class="main-content">
+        <div class="container">
+          <div class="center-section">
+            <div class="logo-title">
+              <img src="img/icon.png" alt="" class="center-image" />
+              <h1 class="main-title">Accurate Prediction</h1>
+            </div>
+            <p class="description">
+              Life path success, strengths and weaknesses, career potential,
+              favorable and challenging phases, compatible love traits,
+              marriage, and more...
+            </p>
+          </div>
+
+          <form class="prediction-form">
+            <div class="form-group">
+              <label for="hoTenKhaiSinh">Enter your birth name:</label>
+              <input
+                type="text"
+                id="hoTenKhaiSinh"
+                placeholder="Enter your full birth name"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="tenThuongDung"
+                >Commonly used name, if any (e.g., Hoanano, Dat09...):</label
+              >
+              <input
+                type="text"
+                id="tenThuongDung"
+                placeholder="Enter your commonly used name, if any
+"
+              />
+              <select id="gioiTinh" required>
+                <option value="" disabled selected>Gender</option>
+                <option value="nam">Male</option>
+                <option value="nu">Female</option>
+                <option value="khac">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group date-selection">
+              <label for="ngaySinh">Date of Birth (Gregorian calendar):</label>
+              <div class="date-inputs">
+                <select id="ngaySinh" required>
+                  <option value="" disabled selected>Select Day</option>
+                </select>
+                <select id="thangSinh" required>
+                  <option value="" disabled selected>Select Month</option>
+                </select>
+                <select id="namSinh" required>
+                  <option value="" disabled selected>Select Year</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-checkbox-group">
+              <label class="checkbox-container">
+                <input type="checkbox" checked />
+                <span class="checkmark"></span>
+                View love and marriage compatibility traits
+              </label>
+            </div>
+            <button type="submit" class="submit-button">
+              <i class="fas fa-search"></i> Lookup
+            </button>
+          </form>
+        </div>
+      </main>
+    </section>
+    <footer class="footer">
+      <div class="container-footer grid grid--cols-3">
+        <div class="col-info-social">
+          <a href="home.html" class="footer-logo">
+            <img src="img/icon.png" alt="icon" class="footer-icon" />
+            <span class="text-head-footer">Horoscope Lookup</span>
+          </a>
+          <div
+            class="fb-page"
+            data-href="https://www.facebook.com/profile.php?id=61577738126823"
+            data-tabs="timeline"
+            data-width="340"
+            data-height="130"
+            data-small-header="false"
+            data-adapt-container-width="true"
+            data-hide-cover="false"
+            data-show-facepile="true"
+          ></div>
+
+          <div id="fb-root"></div>
+          <script
+            async
+            defer
+            crossorigin="anonymous"
+            src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v15.0"
+            nonce="abc123"
+          ></script>
+          <p class="text-footer">Share this website to spread its value!</p>
+          <iframe
+            src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D61577738126823&layout=button_count&size=large&width=120&height=28"
+            width="120"
+            height="28"
+            style="border: none; overflow: hidden"
+            scrolling="no"
+            frameborder="0"
+            allowfullscreen="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          >
+          </iframe>
+        </div>
+        <div class="col-info-transfer">
+          <p class="bank-transfer">Payment Transfer Information</p>
+          <div class="bank-details">
+            <p class="bank-name">Vietnamese Bank: Techcombank</p>
+            <p class="account-number">
+              Account No: 12080399999999<button
+                class="btn btn-primary btn-copy"
+                style="
+                  margin-left: 5px;
+                  padding: 3px 6px;
+                  vertical-align: middle;
+                  font-size: 12px;
+                  background-color: #007bff;
+                  border: none;
+                  border-radius: 3px;
+                "
+                data-clipboard-text="12080399999999"
+              >
+                Copy
+              </button>
+            </p>
+
+            <p class="account-name">Account Holder: Nguyễn Ngọc Tiến Đạt</p>
+          </div>
+          <p class="note">* Transfer description: your phone number</p>
+        </div>
+        <div class="col-contact">
+          <p class="contact">Contact</p>
+          <ul class="contact-info">
+            <li>
+              <p>
+                <i class="fas fa-phone-square"></i> Hotline:
+                <b>0779402982</b>
+                <button
+                  class="btn btn-primary btn-copy"
+                  style="
+                    margin-left: 5px;
+                    padding: 3px 6px;
+                    vertical-align: middle;
+                    font-size: 12px;
+                    background-color: #007bff;
+                    border: none;
+                    border-radius: 3px;
+                  "
+                  data-clipboard-text="0779402982"
+                >
+                  Copy</button
+                ><br />
+                <a href="https://zalo.me/0779402982" target="_blank"
+                  ><img
+                    src="img/img_contact/zalo.png"
+                    style="height: 30px; margin-left: 10px; margin-right: 10px"
+                /></a>
+                <a href="https://wa.me/+84779402982" target="_blank"
+                  ><img
+                    src="img/img_contact/whatsapp.png"
+                    style="height: 30px; margin-right: 10px; margin-left: 10px"
+                /></a>
+                <!-- <a href="sms:0962604394"
+                  ><img
+                    src="uploads/images/icon-sms-min.png"
+                    style="height: 25px; margin-right: 10px"
+                /></a>
+                <a href="tel:0962604394"
+                  ><img
+                    src="uploads/images/icon-call-min.png"
+                    style="height: 25px; margin-right: 10px"
+                /></a> -->
+              </p>
+            </li>
+            <li>
+              <p>
+                <i class="fas fa-envelope"></i> Email:
+                tiendatnguyen2003@gmail.com
+              </p>
+            </li>
+            <li>
+              <p>
+                <i class="fas fa-map-marker-alt"></i> Address: 13/17 Han Mac Tu
+                Street, Vy Da Ward, Thuan Hoa District, Hue City.
+              </p>
+            </li>
+            <!-- <li>
+              <a href="https://tracuuthansohoc.com/chinh-sach-bao-mat/"
+                ><p>Chính sách bảo mật</p></a
+              >
+            </li>
+            <li>
+              <a href="https://tracuuthansohoc.com/dieu-khoan-su-dung/"
+                ><p>Điều khoản sử dụng</p></a
+              >
+            </li>
+            <li>
+              <a href="purchase"><p>Mua lượt Vip</p></a>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const imgs = document.querySelectorAll(".background-zodiac span img");
+      const speeds = [];
+      const fadeSpeeds = [];
+
+      imgs.forEach((img) => {
+        // Vị trí và vận tốc ban đầu
+        img.style.left = `${Math.random() * window.innerWidth}px`;
+        img.style.top = `${Math.random() * window.innerHeight}px`;
+
+        speeds.push({
+          vx: (Math.random() - 0.5) * 1,
+          vy: (Math.random() - 0.5) * 1,
+        });
+
+        // Tốc độ mờ chậm hơn
+        fadeSpeeds.push(0.0006 + Math.random() * 0.0004); // ~0.0006–0.001
+
+        img.dataset.opacity = "1";
+      });
+
+      function animate() {
+        imgs.forEach((img, index) => {
+          const rect = img.getBoundingClientRect();
+          let x = parseFloat(img.style.left);
+          let y = parseFloat(img.style.top);
+          let opacity = parseFloat(img.dataset.opacity);
+
+          // Di chuyển
+          x += speeds[index].vx;
+          y += speeds[index].vy;
+
+          const elW = rect.width;
+          const elH = rect.height;
+
+          // Chạm mép thì bật ngược lại
+          if (x < 0 || x > window.innerWidth - elW) speeds[index].vx *= -1;
+          if (y < 0 || y > window.innerHeight - elH) speeds[index].vy *= -1;
+
+          // Mờ dần
+          opacity -= fadeSpeeds[index];
+
+          // Nếu mờ hẳn thì reset vị trí + opacity
+          if (opacity <= 0) {
+            x = Math.random() * (window.innerWidth - elW);
+            y = Math.random() * (window.innerHeight - elH);
+            opacity = 1;
+          }
+
+          // Cập nhật lại
+          img.style.left = `${x}px`;
+          img.style.top = `${y}px`;
+          img.dataset.opacity = opacity;
+          img.style.opacity = opacity;
+        });
+
+        requestAnimationFrame(animate);
+      }
+
+      animate();
+      document.addEventListener("DOMContentLoaded", function () {
+        const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
+        const dropdowns = document.querySelectorAll(".dropdown");
+
+        // Xử lý mở/đóng dropdown menu
+        dropdownToggles.forEach((toggle) => {
+          toggle.addEventListener("click", function (event) {
+            event.preventDefault();
+            const parentDropdown = this.closest(".dropdown");
+
+            // Đóng các dropdown khác
+            dropdowns.forEach((dd) => {
+              if (dd !== parentDropdown) {
+                dd.classList.remove("active");
+              }
+            });
+
+            // Chuyển trạng thái dropdown hiện tại
+            parentDropdown.classList.toggle("active");
+          });
+        });
+
+        // Đóng dropdown khi click ngoài
+        document.addEventListener("click", function (event) {
+          if (!event.target.closest(".dropdown")) {
+            dropdowns.forEach((dd) => {
+              dd.classList.remove("active");
+            });
+          }
+        });
+
+        // Điền lựa chọn Ngày, Tháng, Năm sinh
+        const ngaySinhSelect = document.getElementById("ngaySinh");
+        const thangSinhSelect = document.getElementById("thangSinh");
+        const namSinhSelect = document.getElementById("namSinh");
+
+        // Khởi tạo lại option mặc định
+        ngaySinhSelect.innerHTML =
+          '<option value="" disabled selected>Select Day</option>';
+        thangSinhSelect.innerHTML =
+          '<option value="" disabled selected>Select Month</option>';
+        namSinhSelect.innerHTML =
+          '<option value="" disabled selected>Select Year</option>';
+
+        // Thêm các ngày 1-31
+        for (let i = 1; i <= 31; i++) {
+          const option = document.createElement("option");
+          option.value = i;
+          option.textContent = `Day ${String(i).padStart(2, "0")}`;
+          ngaySinhSelect.appendChild(option);
+        }
+
+        // Thêm các tháng 1-12
+        // for (let i = 1; i <= 12; i++) {
+        //   const option = document.createElement("option");
+        //   option.value = i;
+        //   option.textContent = `Month ${String(i).padStart(2, "0")}`;
+        //   thangSinhSelect.appendChild(option);
+        // }
+        const monthNames = [
+          "January",
+          "February",
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October",
+          "November",
+          "December",
+        ];
+
+        for (let i = 0; i < 12; i++) {
+          const option = document.createElement("option");
+          option.value = i + 1;
+          option.textContent = monthNames[i];
+          thangSinhSelect.appendChild(option);
+        }
+
+        // Thêm các năm từ năm hiện tại lùi về 100 năm trước
+        const currentYear = new Date().getFullYear();
+        for (let i = currentYear; i >= currentYear - 100; i--) {
+          const option = document.createElement("option");
+          option.value = i;
+          option.textContent = `${i}`;
+          namSinhSelect.appendChild(option);
+        }
+      });
+    </script>
+  </body>
+</html>
